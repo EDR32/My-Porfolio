@@ -1,0 +1,50 @@
+/* Variabel */
+:root{
+    --warna-utama:#e63946;
+    --warna-gelap:#0f0f0f;
+}
+
+/* Reset CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppin', sans-serif;
+}
+
+section
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: var(--warna-utama);
+}
+
+.header-section .header-title {
+    color: var(--warna-utama);
+}
+
+.header-section .header-skill {
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+.header-section .header-skill:hover {
+    color: #e63946;
+}
+
+.header-section .header-skill i{
+    transition: .3s;
+}
+
+.header-section .header-skill:hover i{
+    transform: rotate(-35deg);
+    color: #e63946;
+}
+
+.header-section .header-img {
+    width: 35%;
+}
