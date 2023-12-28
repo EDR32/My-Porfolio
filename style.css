@@ -2,6 +2,10 @@
 :root{
     --warna-utama:#e63946;
     --warna-gelap:#0f0f0f;
+
+    --h1-font-size:40px;
+    --h2-font-size:32px;
+    --small-font-size:14px;
 }
 
 /* Reset CSS */
@@ -13,7 +17,32 @@
     font-family: 'poppin', sans-serif;
 }
 
-section
+/* Global CSS */
+section{
+    padding: 70px 0;
+}
+
+.btn-merah{
+    background-color: var(--warna-utama);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-merah-secondary{
+    border: 2px solid var(--warna-utama);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-merah:hover{
+    background-color: white;
+}
+
+section .section-title {
+    font-size: var(--h2-font-size);
+    font-weight: 800;
+    text-transform: uppercase;
+}
 
 .navbar-nav .nav-item .nav-link {
     color: white;
@@ -47,4 +76,9 @@ section
 
 .header-section .header-img {
     width: 35%;
+}
+
+.portfolio-section{
+    background-color: #e63946;
+    margin-top: -10px;
 }
