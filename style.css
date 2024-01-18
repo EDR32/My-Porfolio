@@ -133,3 +133,14 @@ section .section-title {
 .skills-section .progress-bar .progress{
   background-color: white;
 }
+
+/* News */
+.news-section .card .card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.news-section .card a {
+font-size: 12px;
+}
