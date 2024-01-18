@@ -1,158 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio || EDR</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <!-- Google Fonts POPPINS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Box Icon -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- box icons -->  
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Swiper JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Navbar start -->
-    <nav class="navbar navbar-expand-lg bg-black">
-        <div class="container">
-          <a class="navbar-brand fw-bold text-white" href="#">Hamka Student Club</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- Navbar end -->
-
-      <!-- Hero Start -->
-      <section class="header-section" id="header">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-6">
-                    <p class="fw-bold header-title mt-2 ">Eki Dama Rukmana</p>
-                    <h1 class="=header-title-2 text-uppercase fw-bold mb-5">Web Development</h1>
-
-                    <a href="#" class="d-inline-flex
-                    align-items-center gap-2 header-skill">Web Development<i class='bx bx-right-arrow-alt'></i></a><br>
-                    <a href="#" class="d-inline-flex
-                    align-items-center gap-2 header-skill">Web Development<i class='bx bx-right-arrow-alt'></i></a><br>
-                    <a href="#" class="d-inline-flex
-                    align-items-center gap-2 header-skill">Web Development<i class='bx bx-right-arrow-alt'></i></a>
-
-                <div class="d-flex align-items-center gap-4 mt-5">
-                  <div class="d-flex align-items-center gap-2">
-                    <h2 class="header-skill fw-bold mb-0">3+</h2>
-                    <p>Years Of <br>Experience</p>
-                  </div>
-                  <div class="d-flex align-items-center gap-2">
-                    <h2 class="header-skill fw-bold mb-0">10k</h2>
-                    <p>Customer <br>Happy</p>
-                  </div>
-                </div>
-        </div>
-            <div class="col-md-5">
-                <img src="banteng.jpg" class="header-img">
-            </div>
-          </div>
-      </section>
-      <!-- Hero End -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e63946" fill-opacity="1" d="M0,224L30,234.7C60,245,120,267,180,250.7C240,235,300,181,360,160C420,139,480,149,540,176C600,203,660,245,720,245.3C780,245,840,203,900,192C960,181,1020,203,1080,192C1140,181,1200,139,1260,117.3C1320,96,1380,96,1410,96L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
-      <!-- Portfolio Start -->
-
-      <section class="portfolio-section" id="portfolio">
-        <div class="container">
-          <p class="fs-2">Portfolio</p>
-          <h2 class="section-title">Selected Work</h2>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Eki Dama</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
           
-          <div class="swiper portfolio-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card">
-                  <img src="banteng.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Aplikasi Penjinak Banteng</h5>
-                    <p class="card-text">Ini Adalah Aplikasi Bagaimana cara menjinakkan banteng yang baik dan benar menurut KBBI.</p>
-                    <a href="#" class="btn btn-merah">Lihat Aplikasi</a>
-                  </div>
-                </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero Start -->
+    <section class="header-section" id="header">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6">
+            <p class="text-yellow fw-semibold">Eki Dama Rukmana</p>
+            <h1 class="header-title text-uppercase fw-bold mb-5">Creative designed <br> based in indonesia</h1>
+
+            <a href="#" class="header-skill d-inline-flex align-items-center gap-2">
+              Web Development <i class='bx bx-right-arrow-alt'></i>
+            </a> <br>
+            <a href="#" class="header-skill d-inline-flex align-items-center gap-2">
+              Mobile Development<i class='bx bx-right-arrow-alt'></i>
+            </a><br>
+            <a href="#" class="header-skill d-inline-flex align-items-center gap-2">
+              UI Design <i class='bx bx-right-arrow-alt'></i>
+            </a>
+
+            <div class="d-flex align-item-center gap-4 mt-5">
+              <div class="d-flex align-item-center gap-2">
+                <h2 class="header-skill fw-bold mb-0">3+</h2>
+                <p class="text-secondary fs-6 mb-0">Years of <br>Experience</p>
               </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <img src="banteng.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Aplikasi Penjinak Banteng</h5>
-                    <p class="card-text">Ini Adalah Aplikasi Bagaimana cara menjinakkan banteng yang baik dan benar menurut KBBI.</p>
-                    <a href="#" class="btn btn-merah">Lihat Aplikasi</a>
-                  </div>
-                </div>
+              <div class="d-flex align-item-center gap-2">
+                <h2 class="header-skill fw-bold mb-0">24+</h2>
+                <p class="text-secondary fs-6 mb-0">Happy <br>Costumers</p>
               </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <img src="banteng.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Aplikasi Penjinak Banteng</h5>
-                    <p class="card-text">Ini Adalah Aplikasi Bagaimana cara menjinakkan banteng yang baik dan benar menurut KBBI.</p>
-                    <a href="#" class="btn btn-merah">Lihat Aplikasi</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <img src="banteng.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Aplikasi Penjinak Banteng</h5>
-                    <p class="card-text">Ini Adalah Aplikasi Bagaimana cara menjinakkan banteng yang baik dan benar menurut KBBI.</p>
-                    <a href="#" class="btn btn-merah">Lihat Aplikasi</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-end ml-3 gap-3 mt-2">
-              <button class="btn btn-light d-flex align-items-center justify-content-center swiper-left">
-                <i class="bx bx-left-arrow-alt fs-9"></i>
-              </button>
-              <button class="btn btn-light d-flex align-items-center justify-content-center swiper-right">
-                <i class="bx bx-right-arrow-alt fs-9"></i>
-              </button>
             </div>
           </div>
+          <div class="col-md-5">
+            <img src="img/banteng.jpg" alt="Foto" class="header-img">
+          </div>
         </div>
-      </section>
-        <!-- Porfolio End -->
-      
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
+    </section>
+    <!-- Hero End -->
+
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffc857" fill-opacity="1" d="M0,224L48,192C96,160,192,96,288,85.3C384,75,480,117,576,128C672,139,768,117,864,128C960,139,1056,181,1152,170.7C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    
+    <!-- Portfolio start -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <p class="fs-2">Portfolio</p>
+        <h2 class="section-title">Selected Works</h2>
+
+        <div class="swiper portfolio-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://picsum.photos/id/36/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">UI Food Apps</h5>
+                  <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-yellow me-3">Lihat Demo</a>
+                  <a href="#" class="btn btn-yellow-secondary">Source Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://picsum.photos/id/36/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">UI Food Apps</h5>
+                  <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-yellow me-3">Lihat Demo</a>
+                  <a href="#" class="btn btn-yellow-secondary">Source Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://picsum.photos/id/36/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">UI Food Apps</h5>
+                  <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-yellow me-3">Lihat Demo</a>
+                  <a href="#" class="btn btn-yellow-secondary">Source Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://picsum.photos/id/36/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">UI Food Apps</h5>
+                  <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-yellow me-3">Lihat Demo</a>
+                  <a href="#" class="btn btn-yellow-secondary">Source Code</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="d-flex align-items-center jus tify-content-end gap-3 mt-3">
+            <button class="btn btn-light d-flex align-items-center justify-content-center swiper-left">
+              <i class="bx bx-left-arrow-alt fs-5"></i>
+            </button>
+            <button class="btn btn-light d-flex align-items-center justify-content-center swiper-right">
+              <i class="bx bx-right-arrow-alt fs-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio End -->
+
+    <!-- Skills Start -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6">
+            <p class="fs-2 te fw-semibold">Skills</p>
+            <h2 class="section-title">Programming Skills</h2>
+
+            <div class="mb-3">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <p class=" text-uppercase fw-semibold mb-0">Javascript</p>
+                <p class=" text-uppercase mb-0">90%</p>
+              </div>
+              <div class="progress-bar">
+                <span class="progress" style="width: 90%;"></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <p class=" text-uppercase fw-semibold mb-0">hypertext markup language</p>
+                <p class=" text-uppercase mb-0">99%</p>
+              </div>
+              <div class="progress-bar">
+                <span class="progress" style="width: 99%;"></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <p class=" text-uppercase fw-semibold mb-0">Cascading Stylesheet</p>
+                <p class=" text-uppercase mb-0">95%</p>
+              </div>
+              <div class="progress-bar">
+                <span class="progress" style="width: 95%;"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="img/Team-work.gif" alt="Foto" class="header-img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills End -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffc857" fill-opacity="1" d="M0,256L48,250.7C96,245,192,235,288,202.7C384,171,480,117,576,90.7C672,64,768,64,864,85.3C960,107,1056,149,1152,192C1248,235,1344,277,1392,298.7L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+
+    
+
+
+
+    <!-- script -->
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".portfolio-swiper", {
+      var swiper = new Swiper(".news-swiper", {
         slidesPerView: 3,
         spaceBetween: 30,
-        loop: true,
+        loop:true,
         navigation: {
           nextEl: ".swiper-right",
           prevEl: ".swiper-left"
         },
+        // Responsive breakpoints
+        breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        640: {
+          slidesPerView: 4,
+          spaceBetween:15
+        }
+      },
+      
       });
     </script>
-</body>
+    <script>
+      var swiper = new Swiper(".portfolio-swiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        
+        navigation: {
+          nextEl: ".swiper-right",
+          prevEl: ".swiper-left"
+        },
+        // Responsive breakpoints
+        breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 15
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 25
+        },
+      },
+      });
+    </script>
+   
+  </body>
 </html>
